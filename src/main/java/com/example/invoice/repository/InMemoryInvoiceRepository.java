@@ -5,7 +5,7 @@ import org.springframework.stereotype.Repository;
 
 import java.util.*;
 
-@Repository  // ✅ This makes it a Spring-managed bean
+@Repository
 public class InMemoryInvoiceRepository implements InvoiceRepository {
 
     private final Map<String, Invoice> store = new HashMap<>();
